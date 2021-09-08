@@ -196,11 +196,11 @@ ruBot = RuSIEMBot(_BOT_TOKEN, _CHATID, _IP_SIEM, _SIEM_API_TOKEN)
 def telegramCommandsListener():
 	while True:
 		try:
-			ruBot.openTelegramListener()
-    		ruBot.start()	
+		    ruBot.openTelegramListener()
+    		    ruBot.start()	
 		except Exception as e:
-			print("Telegram is broken")
-    		time.sleep(5)
+		    print("Telegram is broken")
+    		    time.sleep(5)
 
 
 def listenerIncedents():
